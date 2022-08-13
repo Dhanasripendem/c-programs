@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() 
+{
+    int i,j,n;
+    char ch='A',ci='a';
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("%c%c\t",ch,ci);
+            ch++;
+            ci++;
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+OUTPUT:5
+        Aa
+        Bb Cc
+        Dd Ee Ff
+        Gg Hh Ii Jj
+        Kk Ll Mm Nn Oo
