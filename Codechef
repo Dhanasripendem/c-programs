@@ -1,0 +1,18 @@
+#include <stdio.h> 
+int main()
+ {
+ int i,k=0,a[4];
+ for(i=0;i<4;i++)
+ {
+ scanf("%d",&a[i]);
+ } 
+for(i=0;i<4;i++)
+ {
+ if(a[i]>=10)
+ k++;
+ }
+ printf("%d",k);
+ return 0; 
+}
+OUTPUT:10 22 13 5
+       3
