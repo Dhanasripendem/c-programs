@@ -1,0 +1,39 @@
+#include <stdio.h>
+ int main()
+ {
+ int i,a[90],n,flag,j; 
+printf("Enter n value"); 
+scanf("%d",&n);
+ printf("Enter array elements");
+ for(i=0;i<n;i++) 
+{ 
+scanf("%d",&a[i]);
+ }
+ for(i=0;i<n;i++)
+ {
+ flag=0;
+ if(a[i!=1])
+ { 
+for(j=2;j<a[i];j++) 
+{
+ if(a[i]%j==0)
+ { 
+flag=1;
+ break;
+ }
+ }
+ if(flag==0)
+ printf("%d is a prime\n",a[i]);
+ else 
+printf("%d is not a prime\n",a[i]);
+ }
+ } 
+return 0;
+ }
+OUTPUT:Enter n value 4
+        Enter elements into array 
+          11 13 5 4
+11 is a prime
+13 is a prime
+5 is a prime
+4 is not a prime
