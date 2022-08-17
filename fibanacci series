@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() 
+{
+    int i,a[10],n,f,f1=0,f2=1;
+    scanf("%d",&n);
+    printf("%d\t%d\t",f1,f2);
+    for(i=0;i<n;i++)
+    {
+     
+      f=f1+f2;
+       printf("%d\t",f);
+       f1=f2;
+       f2=f;
+       
+    }
+    
+
+    return 0;
+}
+OUTPUT:5
+        0 1 1 2 3 5 
