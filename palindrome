@@ -1,0 +1,27 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    char s[30];
+    int i,j,size;
+    printf("Enter a string");
+    gets(s);
+    size=strlen(s);
+    i=0;
+    j=size -1;
+    while(i<(size/2))
+{
+    if(s[i]==s[j])
+    i++;
+    j--;
+}
+if(s[i]==s[j])
+printf("Palindrome");
+else
+printf("not palindrome");
+    return 0;
+}
+output:enter a string madam
+       palindrome
+output:Enter a string good
+        not palindrome
