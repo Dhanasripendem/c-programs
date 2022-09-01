@@ -1,0 +1,26 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int checkevenorodd(int);
+void main()
+{
+	int x,ans;
+	printf("Enter a number");
+	scanf("%d",&x);
+	ans=checkevenorodd(x);
+	if(ans==0)
+	printf("EVEN");
+	else
+	printf("ODD");
+}
+int checkevenorodd(int x)
+{
+	if(x%2==0)
+		return 0;
+	else
+		return 1;
+}
+OUTPUT:Enter a number 10
+       EVEN
+OUTPUT:Enter a number 11
+        ODD
+        
